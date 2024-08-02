@@ -1,0 +1,29 @@
+/* 
+CSS comments are not displayed in the browser, but they can help document your source code.
+
+CSS Comments
+Comments are used to explain the code, and may help when you edit the source code at a later date.
+
+Comments are ignored by browsers.
+
+A CSS comment is placed inside the <style> element, and starts with /* and ends with 
+*/
+/* This is a single-line comment */
+p {
+    color: red;
+}
+/* You can add comments wherever you want in the code: */
+p {
+    color: red;  /* Set text color to red */
+}
+/* Even in the middle of a code line: */
+p {
+    color: /*red*/blue; 
+}
+/* This is
+a multi-line
+comment */
+
+p {
+    color: red;
+}
