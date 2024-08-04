@@ -1,0 +1,171 @@
+/* 
+In these chapters, you will learn about the following CSS background properties:
+
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+background (shorthand property)
+*/
+/* 
+CSS background-color
+The background-color property specifies the background color of an element.
+*/
+body {
+    background-color: lightblue;
+}
+
+/* With CSS, a color is most often specified by:
+
+a valid color name - like "red"
+a HEX value - like "#ff0000"
+an RGB value - like "rgb(255,0,0)" */
+h1 {
+    background-color: green;
+}
+
+div {
+    background-color: lightblue;
+}
+
+p {
+    background-color: yellow;
+}
+
+div {
+    background-color: green;
+    opacity: 0.3;
+}
+
+/*
+Note:When using the opacity property to add transparency to the background of and element, all of its child elements inherit the same transparency. T
+*/
+/* 
+CSS background-image
+The background-image property specifies an image to use as the background of an element.
+
+By default, the image is repeated so it covers the entire element.
+*/
+body {
+    background-image: url("paper.gif");
+}
+
+/* 
+Note: When using a background image, use an image that does not disturb the text.
+*/
+
+p {
+    background-image: url("paper.gif");
+}
+
+/* 
+CSS background-repeat
+By default, the background-image property repeats an image both horizontally and vertically.
+
+Some images should be repeated only horizontally or vertically, or they will look strange, like this:
+*/
+body {
+    background-image: url("gradient_bg.png");
+}
+
+/* If the image above is repeated only horizontally (background-repeat: repeat-x;), the background will look better: */
+body {
+    background-image: url("gradient_bg.png");
+    background-repeat: repeat-x;
+}
+
+/* 
+Tip: To repeat an image vertically, set background-repeat: repeat-y;
+*/
+
+/* 
+CSS background-repeat: no-repeat
+Showing the background image only once is also specified by the background-repeat property:
+*/
+
+body {
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+}
+
+/* 
+In the example above, the background image is placed in the same place as the text. We want to change the position of the image, so that it does not disturb the text too much.
+
+CSS background-position
+The background-position property is used to specify the position of the background image.
+*/
+body {
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+/* 
+CSS background-attachment
+The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page)
+*/
+body {
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+/* 
+Specify that the background image should scroll with the rest of the page:
+*/
+
+body {
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll;
+}
+
+/* 
+CSS background - Shorthand property
+To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.
+
+Instead of writing:
+*/
+body {
+    background-color: #ffffff;
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+/* 
+You can use the shorthand property background
+*/
+body {
+    background: #ffffff url("img_tree.png") no-repeat right top;
+}
+
+/* 
+When using the shorthand property the order of the property values is:
+
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+*/
+/* 
+It does not matter if one of the property values is missing, as long as the other ones are in this order. Note that we do not use the background-attachment property in the examples above, as it does not have a value.
+*/
+
+/* 
+All CSS Background Properties
+Property	Description
+background	Sets all the background properties in one declaration
+background-attachment	Sets whether a background image is fixed or scrolls with the rest of the page
+background-clip	Specifies the painting area of the background
+background-color	Sets the background color of an element
+background-image	Sets the background image for an element
+background-origin	Specifies where the background image(s) is/are positioned
+background-position	Sets the starting position of a background image
+background-repeat	Sets how a background image will be repeated
+background-size	Specifies the size of the background image(s)
+*/
